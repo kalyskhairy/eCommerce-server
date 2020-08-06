@@ -1,0 +1,65 @@
+[
+    {
+        "name" : "ECENG ROUND TISSUE BOX",
+        "price": 70000,
+        "imageUrl": "https://asset.dekornata.com/image/variant/original/eceng-round-tissue-boxx-natural-1586686368469.jpeg",
+        "CategoryId": 1,
+        "stock": 100
+    },
+    {
+        "name" : "RECTANGULAR TISSUE BOX",
+        "price": 85000,
+        "imageUrl": "https://asset.dekornata.com/image/variant/original/rectangular-tissue-box-walnut-1589022174895.jpeg",
+        "CategoryId": 1,
+        "stock": 100
+    },
+    {
+        "name" : "SQUARE TISSUE BOX",
+        "price": 95000,
+        "imageUrl": "https://asset.dekornata.com/image/variant/original/square-tissue-box-walnut-1586415540192.jpeg",
+        "CategoryId": 1,
+        "stock": 100
+    },
+    {
+        "name" : "HEXAGON TRAY",
+        "price": 150000,
+        "imageUrl": "https://asset.dekornata.com/image/variant/original/hexagon-tray-natural-1591019988777.jpeg",
+        "CategoryId": 2,
+        "stock": 100
+    },
+    {
+        "name" : "MELINDA STAIR TRAY",
+        "price": 180000,
+        "imageUrl": "https://asset.dekornata.com/image/variant/original/melinda-stair-tray-natural-1586855603387.jpeg",
+        "CategoryId": 2,
+        "stock": 100
+    },
+    {
+        "name" : "CALLY TRAY",
+        "price": 155000,
+        "imageUrl": "https://asset.dekornata.com/image/variant/original/cally-tray-natural-1586852144230.jpeg",
+        "CategoryId": 2,
+        "stock": 100
+    },
+    {
+        "name" : "SHAPEO TUBE DECORATION",
+        "price": 115000,
+        "imageUrl": "https://asset.dekornata.com/image/variant/original/shapeo-tube-decoration-octagon-1586848942776.jpeg",
+        "CategoryId": 3,
+        "stock": 100
+    },
+    {
+        "name" : "ROKET VASE",
+        "price": 125000,
+        "imageUrl": "https://asset.dekornata.com/image/variant/original/roket-vase-medium-1586850155127.jpeg",
+        "CategoryId": 3,
+        "stock": 100
+    },
+    {
+        "name" : "ERIN VASE",
+        "price": 95000,
+        "imageUrl": "https://asset.dekornata.com/image/variant/original/erin-vase-natural-1586454521910.jpeg",
+        "CategoryId": 3,
+        "stock": 100
+    }
+]
