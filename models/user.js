@@ -68,11 +68,16 @@ module.exports = (sequelize, DataTypes) => {
       money: {
         type: DataTypes.INTEGER,
         defaultValue: 0,
+        allowNull: false,
         validate: {
           isInt: {
             args: true,
             message: "must be integer",
           },
+          notNull: {
+            args: true,
+            message: "please fill with number"
+          }
         },
       },
     },

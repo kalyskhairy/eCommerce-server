@@ -6,7 +6,7 @@ class ProductController {
   static async findAll(req, res, next) {
     try {
       let Products = await Product.findAll({ include: { model: Category } });
-      console.log(Products);
+    //   console.log(Products);
       if (Product) {
         res.status(200).json({
           Products,
@@ -57,7 +57,7 @@ class ProductController {
         where: { id },
         returning: true,
       });
-      console.log(updatedProduct, "ini update product");
+    //   console.log(updatedProduct, "ini update product");
       if (updatedProduct) {
         res.status(201).json({ product: updatedProduct });
       } else {

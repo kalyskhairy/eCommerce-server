@@ -15,11 +15,19 @@ class UserController {
         password,
         username,
       });
-      console.log(Users instanceof User);
-      console.log(Users, "=====");
-      res.status(200).json({
-        user: Users,
-      });
+    //   console.log(Users instanceof User);
+    //   console.log(Users, "=====");
+    if(Users) {
+        console.log(Users, 'ini USERS')
+        let token = generateToken({
+            id: Users.id,
+            email: Users.email,
+          });
+          res.status(200).json({
+            user: Users,
+            token
+          });
+    }
     } catch (error) {
       console.log(error);
       next(error)
@@ -50,11 +58,13 @@ class UserController {
           if (compare) {
             let token = generateToken({
               id: user.id,
-              emial: user.email,
+              email: user.email,
             });
             res.status(200).json({
               id: user.id,
+              username: user.username,
               email: user.email,
+              money: user.money,
               token,
             });
           } else {
@@ -76,6 +86,7 @@ class UserController {
   }
 
   static async updateUser(req, res, next) {
+      console.log('masuk topup')
         const { money } = req.body;
         let id = req.UserId;
         console.log(id, "id user");
@@ -98,9 +109,9 @@ class UserController {
               }
           }
         } catch (error) {
+            console.log('masuk error topup', error)
           return next(error);
         }
-        // console.log(updateUser[0][0][0], 'ini updateUser')
       }
 }
 
